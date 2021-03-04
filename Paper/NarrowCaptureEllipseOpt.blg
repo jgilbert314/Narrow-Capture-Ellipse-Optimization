@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: NarrowCaptureEllipseOpt.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: unsrt.bst
+Database file #1: NarrowCaptureEllipseOpt.bib
+You've used 23 entries,
+            1791 wiz_defined-function locations,
+            606 strings with 7876 characters,
+and the built_in function-call counts, 5232 in all, are:
+= -- 472
+> -- 228
+< -- 1
++ -- 84
+- -- 61
+* -- 408
+:= -- 850
+add.period$ -- 69
+call.type$ -- 23
+change.case$ -- 21
+chr.to.int$ -- 0
+cite$ -- 23
+duplicate$ -- 207
+empty$ -- 512
+format.name$ -- 61
+if$ -- 1128
+int.to.chr$ -- 0
+int.to.str$ -- 23
+missing$ -- 25
+newline$ -- 118
+num.names$ -- 23
+pop$ -- 38
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 78
+stack$ -- 0
+substring$ -- 421
+swap$ -- 24
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 55
+width$ -- 25
+write$ -- 252

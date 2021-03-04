@@ -1,0 +1,134 @@
+\begin{thebibliography}{10}
+
+\bibitem{red2001}
+Sidney Redner.
+\newblock {\em A Guide to First-Passage Processes}.
+\newblock Cambridge University Press, 2001.
+
+\bibitem{holcman2014narrow}
+David Holcman and Zeev Schuss.
+\newblock The narrow escape problem.
+\newblock {\em SIAM Review}, 56(2):213--257, 2014.
+
+\bibitem{saffman1975brownian}
+PG~Saffman and M~Delbr{\"u}ck.
+\newblock Brownian motion in biological membranes.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  72(8):3111--3113, 1975.
+
+\bibitem{ralf2014first}
+Metzler Ralf, Redner Sidney, and Oshanin Gleb.
+\newblock {\em First-passage Phenomena and their Applications}, volume~35.
+\newblock World Scientific, 2014.
+
+\bibitem{bressloff2008diffusion}
+Paul~C Bressloff, Berton~A Earnshaw, and Michael~J Ward.
+\newblock Diffusion of protein receptors on a cylindrical dendritic membrane
+  with partially absorbing traps.
+\newblock {\em SIAM Journal on Applied Mathematics}, 68(5):1223--1246, 2008.
+
+\bibitem{bressloff2013stochastic}
+Paul~C Bressloff and Jay~M Newby.
+\newblock Stochastic models of intracellular transport.
+\newblock {\em Reviews of Modern Physics}, 85(1):135, 2013.
+
+\bibitem{holcman2004escape}
+D~Holcman and Z~Schuss.
+\newblock Escape through a small opening: receptor trafficking in a synaptic
+  membrane.
+\newblock {\em Journal of Statistical Physics}, 117(5-6):975--1014, 2004.
+
+\bibitem{kolokolnikov2005optimizing}
+Theodore Kolokolnikov, Michele~S Titcombe, and Michael~J Ward.
+\newblock Optimizing the fundamental neumann eigenvalue for the laplacian in a
+  domain with small traps.
+\newblock {\em European Journal of Applied Mathematics}, 16(2):161--200, 2005.
+
+\bibitem{iyaniwura2020optimization}
+Sarafa~A Iyaniwura, Tony Wong, Colin~B Macdonald, and Micheal~J Ward.
+\newblock Optimization of the mean first passage time in near-disk and
+  elliptical domains in 2-{D} with small absorbing traps (in press).
+\newblock {\em arXiv preprint arXiv:2006.12722}, 2020.
+
+\bibitem{cheviakov2011optimizing}
+Alexei~F Cheviakov and Michael~J Ward.
+\newblock Optimizing the principal eigenvalue of the {L}aplacian in a sphere
+  with interior traps.
+\newblock {\em Mathematical and Computer Modelling}, 53(7-8):1394--1409, 2011.
+
+\bibitem{gilbert2019globally}
+Jason Gilbert and Alexei Cheviakov.
+\newblock Globally optimal volume-trap arrangements for the narrow-capture
+  problem inside a unit sphere.
+\newblock {\em Physical Review E}, 99(1):012109, 2019.
+
+\bibitem{ridgway2019locally}
+Wesley~JM Ridgway and Alexei~F Cheviakov.
+\newblock Locally and globally optimal configurations of {N} particles on the
+  sphere with applications in the narrow escape and narrow capture problems.
+\newblock {\em Physical Review E}, 100(4):042413, 2019.
+
+\bibitem{vaz2007particle}
+A~Ismael~F Vaz and Lu{\'\i}s~N Vicente.
+\newblock A particle swarm pattern search method for bound constrained global
+  optimization.
+\newblock {\em Journal of Global Optimization}, 39(2):197--219, 2007.
+
+\bibitem{currie2012opti}
+Jonathan Currie, David~I Wilson, Nick Sahinidis, and Jose Pinto.
+\newblock Opti: Lowering the barrier between open source optimizers and the
+  industrial matlab user.
+\newblock {\em Foundations of computer-aided process operations}, 24:32, 2012.
+
+\bibitem{lagarias1998convergence}
+Jeffrey~C Lagarias, James~A Reeds, Margaret~H Wright, and Paul~E Wright.
+\newblock Convergence properties of the nelder--mead simplex method in low
+  dimensions.
+\newblock {\em SIAM Journal on optimization}, 9(1):112--147, 1998.
+
+\bibitem{lee1980two}
+Der-Tsai Lee and Bruce~J Schachter.
+\newblock Two algorithms for constructing a delaunay triangulation.
+\newblock {\em International Journal of Computer \& Information Sciences},
+  9(3):219--242, 1980.
+
+\bibitem{iyaniwura2019simulation}
+Sarafa Iyaniwura, Tony Wong, Michael~J Ward, and Colin~B Macdonald.
+\newblock Simulation and optimization of mean first passage time problems in
+  2-d using numerical embedded methods and perturbation theory.
+\newblock {\em arXiv preprint arXiv:1911.07842}, 2019.
+
+\bibitem{sloane1995minimal}
+Neil~JA Sloane, Ronald~H Hardin, TDS Duff, and John~H Conway.
+\newblock Minimal-energy clusters of hard spheres.
+\newblock {\em Discrete \& Computational Geometry}, 14(3):237--259, 1995.
+
+\bibitem{manoharan2003dense}
+Vinothan~N Manoharan, Mark~T Elsesser, and David~J Pine.
+\newblock Dense packing and symmetry in small clusters of microspheres.
+\newblock {\em Science}, 301(5632):483--487, 2003.
+
+\bibitem{saint2001macroscopic}
+M~Saint~Jean, C~Even, and C~Guthmann.
+\newblock Macroscopic 2{D} {W}igner islands.
+\newblock {\em EPL (Europhysics Letters)}, 55(1):45, 2001.
+
+\bibitem{hoare1971physical}
+MR~Hoare and P~Pal.
+\newblock Physical cluster mechanics: Statics and energy surfaces for monatomic
+  systems.
+\newblock {\em Advances in Physics}, 20(84):161--196, 1971.
+
+\bibitem{cheviakov2010asymptotic}
+Alexei~F Cheviakov, Michael~J Ward, and Ronny Straube.
+\newblock An asymptotic analysis of the mean first passage time for narrow
+  escape problems: Part ii: The sphere.
+\newblock {\em Multiscale Modeling \& Simulation}, 8(3):836--870, 2010.
+
+\bibitem{cheviakov2013narrow}
+Alexei~F Cheviakov and Daniel Zawada.
+\newblock Narrow-escape problem for the unit sphere: Homogenization limit,
+  optimal arrangements of large numbers of traps, and the n 2 conjecture.
+\newblock {\em Physical Review E}, 87(4):042118, 2013.
+
+\end{thebibliography}
