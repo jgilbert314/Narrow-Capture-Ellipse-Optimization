@@ -1,0 +1,17 @@
+General Notes:
+	It seems that the coefficients used to calculate the AMFPT, defined in equation (4.1),
+	depend on both the trap positions, and the size of the traps (epsilon). Looking at (4.1),
+	it seems to me that the second term which be minimized to find the optimal trap arrangement,
+	which seems to mean that the optimum depends on the size of the traps. This seems counter-intuitive
+	based on my previous experience with the subject, but I'll check to see how it affects the optimum.
+	! - should be able to figure this out by checking if direction of vector changes with epsilon
+	
+Code Notes:
+	z_sumFunc
+		- Sum of infinite series is approximated by adding all terms above machine precision
+		keep in mind that this may be a prohibitively large calculation for some inputs (not fully tested)
+	greensFunc, greensSingFunc
+		- consider factoring common denominators from terms of sum. May speed up calculation.
+
+	*** Write function to carry out optimization. See if optimal configurations seem reasonable as a way of 
+	testing program so far.
