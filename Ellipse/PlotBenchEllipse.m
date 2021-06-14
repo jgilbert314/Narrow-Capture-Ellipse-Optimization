@@ -1,14 +1,14 @@
 %% Initialization
 clear;
 
-save_flag = 0; % Flags that all data should be visualized and saved
+save_flag = 1; % Flags that all data should be visualized and saved
 SaveDir = ['VisFiles']; % Relative path to plot save folder
 
-filename = 'Ellipse\LogFiles\Log_eps0p500-ecc0p500\GoodLog3.csv';
+filename = 'C:\Projects\Narrow Escape\Elliptical Domain\Ellipse\LogFiles\Log_eps-diff500-ecc0p125\log4.csv';
 DataSet = buildDataSet(filename);
 
-% Domain setup
-ecc = 0.500;                % Eccentricity of ellipse
+% Domain 
+ecc = 0.125;                % Eccentricity of ellipse
 epsilon = 0.05;              % Trap size
 
 % Domain dependent terms
@@ -24,11 +24,13 @@ y = b*sqrt(1 - (x/a).^2);
 save_flag = 1;
 
 
-for itr = 3:length(DataSet.ConfigData)
-    thisCoord = DataSet.ConfigData(itr).coordVec;
-    thisTri = DataSet.ConfigData(itr).triD;
+for itr = 1:length(DataSet.ConfigData)
+    ThisConfig = DataSet.ConfigData(itr);
+    thisCoord = ThisConfig.coordVec;
+    thisTri = ThisConfig.triD;
     close('all');
-    plotTrapsEllipse(thisCoord, a, b, 'tri', thisTri);
+    eps_p = calcTwoTrapSizes(epsilon, ThisConfig.thisN, 2, 1/2); % TESTING
+    plotTrapsEllipse(thisCoord, a, b, 'tri', thisTri, 'unequalTraps', eps_p);
     subplot(2, 1, 1);
     hold on
     plot(x, y, 'k');
@@ -36,7 +38,7 @@ for itr = 3:length(DataSet.ConfigData)
     hold off
     axis equal;
     if (save_flag)
-        print( [SaveDir, '\N', num2str(itr)], '-r300', '-dpng' );
+        print( [SaveDir, '\N', num2str(DataSet.ConfigData(itr).thisN)], '-r300', '-dpng' );
     end
 end
 
@@ -111,7 +113,7 @@ res = 1e3;
 thresh = 0.3;
 
 % Init Demo Visualization
-ind = 50; % Index of demo data
+ind = 35; % Index of demo data
 ThisConfig = DataSet.ConfigData(ind);
 thisTri = ThisConfig.triD;
 thisCoord = ThisConfig.coordVec;
@@ -194,6 +196,11 @@ for itr = 3:length(DataSet.ConfigData)
     plotDense(hist2D, bins, window, 0.1);
     subplot(2, 2, 1);
     title(['N = ', num2str(thisN)]);
+    
+%     subplot(2, 2, 2);
+%     plotTrapsEllipse(thisCoord, a, b, 'tri', thisTri);
+%     title('Trap Locations');
+    
     if (save_flag)
         print( [SaveDir, '\Dense_N', num2str(itr)], '-r300', '-dpng' );
     else

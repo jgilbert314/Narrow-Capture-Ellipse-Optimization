@@ -18,12 +18,22 @@ function [ UB, LB ] = buildBounds(A, N)
 %   UB - vector of upper bounds, in the form [distance, angle]
 %        where distance = A, and angle = 2*pi
 
+% vec = ones(1, N);
+% LB = [0*vec, 0*vec];
+% if (A == 0) % Circular domain
+%     UB = [0.999*vec, 2*pi*vec]; % Max < 1 to keep traps from being placed on boundary
+% else
+%     UB = [0.999*A*vec, 2*pi*vec]; % Max < A to keep traps from being placed on boundary
+% end
+
+%%% TESTING - delete
 vec = ones(1, N);
 LB = [0*vec, 0*vec];
 if (A == 0) % Circular domain
-    UB = [0.999*vec, 2*pi*vec]; % Max < 1 to keep traps from being placed on boundary
+    UB = [0.8*vec, 2*pi*vec]; % Max < 1 to keep traps from being placed on boundary
 else
-    UB = [0.999*A*vec, 2*pi*vec]; % Max < A to keep traps from being placed on boundary
+    UB = [0.8*A*vec, 2*pi*vec]; % Max < A to keep traps from being placed on boundary
 end
+%%% TESTING - end
 
 end

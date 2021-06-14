@@ -10,9 +10,16 @@ init_search = InputStruct.init_search;  % Search algorithm to run on first pass 
 flag_init = InputStruct.flag_init;      % Indicates if reference data has been provided for initial guesses
 OptStruct = InputStruct.OptStruct;      % Structure of optimization algorithm options
 
+eps_inds = InputStruct.eps_inds;
+
 % Domain parameters
 A = InputStruct.A;   % Size in elliptical coordinates
 mu = InputStruct.mu; % Eccentricity in elliptical coordinates
+
+% Trap size parameters
+epsilon_0 = InputStruct.epsilon_0;
+N_p = InputStruct.N_p;
+k = InputStruct.k;
 
 % Log file init
 log_dir = InputStruct.log_dir; % Directory where log files will be stored
@@ -41,8 +48,7 @@ end
 
 
 % Local optimization parameters (as used by fminsearch)
-OptStructLocal = optimset('MaxFunEvals', OptStruct.maxfeval, 'MaxIter', OptStruct.maxiter, ...
-   'TolFun', OptStruct.tolrfun, 'Display', 'iter');
+OptStructLocal = InputStruct.OptStructLocal;
 
 
 % If the log directory does not exist, create it
@@ -84,6 +90,9 @@ while ( ~isempty(N_list) && (optCount < optLimit) )
             
             % Update merit function
             InputStruct.N = N;
+            InputStruct.epsilon = calcTwoTrapSizes(epsilon_0, N, N_p, k); % TESTING
+            InputStruct.epsilon = InputStruct.epsilon(eps_inds); % Shuffle trap positions
+            InputStruct.nu = -1./log(InputStruct.epsilon);
             meritFunc = @(x) meritFuncGeneral(x, InputStruct);
             
             % Update init coords and bounds
@@ -177,5 +186,10 @@ while ( ~isempty(N_list) && (optCount < optLimit) )
     elseif (strcmpi(search_type, local_search))
         search_type = global_search; % Next search will be global
     end
+    
+    % TESTING
+    indFileID = fopen([comp_log_filename_base, num2str(fileInd), '.ind'], 'w');
+    fprintf(indFileID, '%u,', eps_inds); 
+    % END TESTING
     
 end

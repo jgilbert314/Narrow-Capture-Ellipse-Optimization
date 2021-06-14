@@ -1,0 +1,22 @@
+- Check if nu is a vector or constant
+	- If vector, use loop
+	- If constant, use eq. 2.14
+	
+- Update
+	- meritFuncGeneral
+		- to handle different traps
+		-x (?) to handle different traps where epsilon is 0
+		-  to reject case where epsilon is zero
+		^ Check for contact between traps using (AMFPT < 0)
+	- Initialization code
+		- Allow vector for epsilon
+		- Display user feedback indicating if traps are common size
+	- coeffVecFunc
+		^ Exploit symmetry of LHS
+	- calcTwoTrapSizes
+		- build epsilon vector using scaling factors
+		
+^ calcAMFPT
+	^ check case nu constant
+	^ check case nu vector
+	

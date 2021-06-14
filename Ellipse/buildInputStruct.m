@@ -31,3 +31,5 @@ InputStruct.omega = omega;
 % Elliptical Coords
 InputStruct.A = A;
 InputStruct.mu = mu;
+
+end

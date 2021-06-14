@@ -1,0 +1,36 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\author{Jason Gilbert}
+\title{NE Unequal Trap Notes}
+
+
+% NC Definition Notation
+\newcommand{\subDom}{\bar{\Omega}}
+% Ward Notation
+\newcommand{\amfpt}{\overline{u}_0} % Average MFPT
+\newcommand{\veps}{\varepsilon}     % Epsilon (trap size)
+\newcommand{\greenMat}{\mathcal{G}} % Green's Matrix
+\newcommand{\vecA}{\mathcal{A}}     % Size-dependent system
+\newcommand{\vecE}{\textbf{e}}      % Vector of 1
+\newcommand{\trapLoc}{\mathbf{x}}   % Coordinate vector
+\newcommand{\domMeas}{|\Omega|}     % Area of domain
+\newcommand{\etaS}{\eta_\star}      % Parameter used in atan2 calculation
+\newcommand{\meritFunc}{q}          % Merit function
+% My Notation
+\newcommand{\ecc}{\kappa}
+% Citation Notation
+\newcommand{\wardTab}{2}
+
+
+\begin{document}
+
+\begin{equation}
+(I + 2\pi\nu\greenMat)\vecA = nu\amfpt\vecE \ , \qquad
+\vecE^T \vecA = \dfrac{\subDom}{2\pi D}
+\end{equation}
+
+
+\end{document}
