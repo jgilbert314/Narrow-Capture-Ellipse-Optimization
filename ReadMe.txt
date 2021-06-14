@@ -16,7 +16,10 @@ Scripts used in current workflow/testing:
 Workflow:
 	- Run CrudeLoop or TestingDiffTraps
 	- Program will run until optimization is complete
-	- Suspectedly unnacceptable configurations will be written to file 'TestLog.log' from function 'meritFunctionGeneral'. Conditions specifying log behaviour can be defined here.
+	- Suspectedly unnacceptable configurations will be written to file 'TestLog.log' from function 'meritFunctionGeneral()'. Conditions specifying log behaviour can be defined here.
 	- I usually run CrudeLoop until I see data in the log file (usually takes ~30 sec), then stop the program and analyze.
 	- Run LogSearch to find optimum arrangement and trap indices. Plot configuration using PlotBenchEllipse.
 	- Currently the program runs without catching bad configurations, but inspecting the results shows that the results are unnacceptable.
+	
+Note:
+	- Parameter space is currently defined in the function 'buildBounds()'. It should take the bounds as an argument, but I'm just hardcoding them in the function at the moment.
