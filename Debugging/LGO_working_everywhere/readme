@@ -1,0 +1,6 @@
+Use Matlab 2015b (latest for 32-bit only.)
+
+What LGO does to check license is shown in whatLGOdoes.m
+
+matlablgo.mexw32 is modified to work for any lgo_license.dat file (has to be in directory)
+

@@ -1,0 +1,36 @@
+
+                                  *** LGO ***
+
+     A Model Development and Solver System for Continuous Global Optimization
+
+                               (c) Janos D. Pinter       
+                         Pinter Consulting Services, Inc.
+                             www.pinterconsulting.com    
+
+
+
+                        --- LGO Solver Results Summary ---
+
+
+     Model name (optional):   LGO Model           
+
+     Total number of function evaluations                                  11002
+
+     Estimated optimum (including penalties, when present)         -2.5810055438
+
+     Estimated optimal solution vector
+          1                                                         2.7756074346
+          2                                                         1.9347292635
+          3                                                         1.6077969469
+          4                                                         1.2068630857
+          5                                                         0.3659853149
+          6                                                         1.5337958815
+          7                                                         2.1611177853
+          8                                                         5.1918710404
+          9                                                         0.4935826603
+         10                                                         2.0502784296
+         11                                                         5.3027095168
+         12                                                         3.6351749549
+
+     Objective function name (optional):   Objective           
+     Objective function value at optimum estimate                  -2.5810055438

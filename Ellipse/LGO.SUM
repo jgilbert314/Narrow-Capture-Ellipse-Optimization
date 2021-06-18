@@ -1,0 +1,48 @@
+
+                                  *** LGO ***
+
+     A Model Development and Solver System for Continuous Global Optimization
+
+                               (c) Janos D. Pinter       
+                         Pinter Consulting Services, Inc.
+                             www.pinterconsulting.com    
+
+
+
+                        --- LGO Solver Results Summary ---
+
+
+     Model name (optional):   LGO Model           
+
+     Total number of function evaluations                                    187
+
+     Estimated optimum (including penalties, when present)       1000.0000000000
+
+     Estimated optimal solution vector
+          1                                                         0.0000000000
+          2                                                         1.1111111111
+          3                                                         2.2222222222
+          4                                                         3.3333333333
+          5                                                         4.4444444444
+          6                                                         5.5555555556
+          7                                                         0.3834813595
+          8                                                         1.4945924706
+          9                                                         2.6057035817
+         10                                                         3.7168146928
+         11                                                         0.0000000000
+         12                                                         0.0557923614
+         13                                                         0.1115847228
+         14                                                         0.1673770843
+         15                                                         0.2231694457
+         16                                                         0.2789618071
+         17                                                         0.3347541685
+         18                                                         0.3905465300
+         19                                                         0.4463388914
+         20                                                         0.5021312528
+
+     Objective function name (optional):   Objective           
+     Objective function value at optimum estimate                1000.0000000000
+
+     Solution time (seconds)                                                0.25
+
+     --- LGO operations completed. ---
